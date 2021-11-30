@@ -1,0 +1,19 @@
+:root {
+  --bruce-primary: #3e3e3e;
+  --bruce-title: 14px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-5 dark:bg-gray-800;
+  }
+}
+@layer components {
+  .card {
+    @apply w-full px-4 py-3 flex box-border rounded-lg bg-gray-800 sm:bg-red-400 md:bg-yellow-400;
+  }
+}
